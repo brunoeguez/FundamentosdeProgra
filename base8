@@ -1,0 +1,36 @@
+#include "stdafx.h"
+ #include <iostream>
+ #include "conio.h"
+
+ using namespace std;
+ bool funoctal(int n);
+
+ void main()
+ {
+ 	int n;
+ 	cout<<"Ingrese un numero: ";
+ 	cin>>n;
+ 	if (funoctal(n)==false)
+ 		cout<<"No esta en base 8";
+ 	else
+ 		cout<<"Si esta en base 8";
+ 	getch();
+ 	cout<<"El numero "<<funoctal(n)<<"es octal";
+ 	getch();
+ }
+ bool funoctal(int n)
+ {
+ 	int d;
+ 	bool band=false;
+ 	while(n>0)
+ 	{
+ 		d=n%10;
+ 		n=n/10;
+ 		if ((d<0)||(d>=8))
+ 		{
+ 			band=true;
+ 			break;
+ 		}
+ 	}
+ 	return band;
+ }
