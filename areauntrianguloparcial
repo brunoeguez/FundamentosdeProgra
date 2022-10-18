@@ -1,0 +1,23 @@
+// areadeltrapecio.cpp : Defines the entry point for the console application.
+ //
+
+ #include "stdafx.h"
+ #include <iostream>
+ #include "conio.h"
+ #include "math.h"
+
+ using namespace std;
+ void main()
+ {
+ 	float b,a,c,A,S;
+ 	cout<<"Ingresar el valor de A:";
+ 	cin>> a;
+ 	cout<<"Ingresar el valor de B:";
+ 	cin>> b;
+ 	cout<<"Ingresar el valor de C:";
+ 	cin>> c;
+ 	S=(a+b+c)/2;
+ 	A=sqrt((S*(S-a)*(S-b)*(S-c)));
+ 	cout<<"El valor del Area del triángulo es:"<<A;
+ 	getch ();
+ }
