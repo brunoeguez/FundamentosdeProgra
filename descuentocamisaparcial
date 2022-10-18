@@ -1,0 +1,28 @@
+#include "stdafx.h"
+ #include <iostream>
+ #include "conio.h"
+ #include "math.h"
+
+ using namespace std;
+
+ int main()
+ {
+ 	int camisas,total,costo;
+ 	cout<<"Cuantas camisas va a comprar hoy: ";
+ 	cin>>camisas;
+ 	costo=50;
+ 	if (camisas>=3)
+ 	{
+ 		total=(costo*camisas)*(0.3);
+ 		cout<<"Su total el dia de hoy es: "<<total<<".bs"<<endl;
+ 	}
+
+ 	if (camisas<=2)
+ 	{
+ 		total=(costo*camisas)*(0.15);
+ 	cout<<"Su total el dia de hoy es: "<<total<<".bs";
+ 	}
+
+ 	getch();
+ 	return 0;
+ }
