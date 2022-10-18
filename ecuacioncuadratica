@@ -1,0 +1,21 @@
+#include "stdafx.h"
+ #include <iostream>
+ #include "math.h"
+ #include "conio.h"
+
+ using namespace std;
+
+ void main()
+ {
+ 	float x1, x2, a, b, c;
+ 	cout<<"Ingresar el valor de a, b y c: ";
+ 	cin>> a;
+ 	cin>> b;
+ 	cin>> c;
+ 	x1= (-b+sqrt((b*b)-4*a*c))/2*a;
+ 	x2= (-b-sqrt((b*b)-4*a*c))/2*a;
+ 	cout<<"El valor de x1 es: "<<x1<<endl;
+ 	cout<<"El valor de x2 es: "<<x2;
+ 	getch();
+
+ }
